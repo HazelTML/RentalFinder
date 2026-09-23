@@ -1,0 +1,56 @@
+
+/* Configure custom Tailwind config styles and fallback rules */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Tailwind Config script rules extracted to pure CSS definitions */
+:root {
+  --color-pine-50: #f0f7f4;
+  --color-pine-100: #dbece4;
+  --color-pine-500: #2d6a4f;
+  --color-pine-600: #1b4332;
+  --color-pine-700: #081c15;
+  --color-amber-500: #f59e0b;
+  --color-amber-600: #d97706;
+}
+
+/* Custom Pine color utilities */
+.bg-pine-50 { background-color: var(--color-pine-50); }
+.bg-pine-100 { background-color: var(--color-pine-100); }
+.bg-pine-500 { background-color: var(--color-pine-500); }
+.bg-pine-600 { background-color: var(--color-pine-600); }
+.bg-pine-700 { background-color: var(--color-pine-700); }
+
+.bg-pine-700\/60 { background-color: rgba(8, 28, 21, 0.6); }
+.bg-pine-700\/40 { background-color: rgba(8, 28, 21, 0.4); }
+
+.hover\:bg-pine-500\/50:hover { background-color: rgba(45, 106, 79, 0.5); }
+.hover\:bg-pine-700:hover { background-color: var(--color-pine-700); }
+
+.text-pine-100 { color: var(--color-pine-100); }
+.text-pine-500 { color: var(--color-pine-500); }
+.text-pine-600 { color: var(--color-pine-600); }
+.text-pine-700 { color: var(--color-pine-700); }
+
+.border-pine-500\/30 { border-color: rgba(45, 106, 79, 0.3); }
+.border-pine-600 { border-color: var(--color-pine-600); }
+
+.focus\:ring-pine-500:focus {
+  --tw-ring-color: var(--color-pine-500);
+}
+
+.selection\:bg-pine-500 *::selection { background-color: var(--color-pine-500); }
+.selection\:bg-pine-500::selection { background-color: var(--color-pine-500); }
+
+/* Custom Amber color utilities */
+.bg-amber-500 { background-color: var(--color-amber-500); }
+.text-amber-500 { color: var(--color-amber-500); }
+
+/* Simulated Map Background */
+.map-bg {
+  background-color: #e5e7eb;
+  background-image: radial-gradient(#cbd5e1 1.5px, transparent 1.5px), radial-gradient(#cbd5e1 1.5px, #f1f5f9 1.5px);
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+}
